@@ -1,11 +1,11 @@
 body {
-    background-color: #000000;
+    background-color: #000;
 }
 
 .container {
     text-align: center;
     margin-top: 40px;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .btn {
@@ -14,5 +14,141 @@ body {
 }
 
 .breathing-options {
-    margin: 35px 0px 0px 0px;
+    margin: 35px 0px 75px 0px;
+}
+
+.breather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    transform: scale(1);
+}
+  
+.gradient {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.gradient-box {
+    background: conic-gradient(
+        #55b7a4 0%,
+        #4ca493 25%,
+        #fff 25%,
+        #fff 50%,
+        #336d62 50%,
+        #2a5b52 75%,
+        #fff 75%,
+        #fff 100%
+    );
+}
+  
+.pointer {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+  
+.pointer-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    transform-origin: bottom center;
+}
+
+.pointer-box {
+    animation: rotate 16s linear forwards infinite;
+}
+
+.pointer-478 {
+    animation: rotate 9.5s linear forwards infinite;
+}
+
+.pointer-711 {
+    animation: rotate 18s linear forwards infinite;
+}
+  
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
+.scaleBox {
+    animation: boxScale 16s linear infinite;
+}
+  
+@keyframes scaleBox {
+    0% {
+        transform: scale(1);
+    }
+    
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale478 {
+    animation: scale478 9.5s linear infinite;
+}
+
+@keyframes scale478 {
+    0% {
+        transform: scale(1);
+    }
+
+    21% {
+        transform: scale(1.2);
+    }
+
+    58% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale711 {
+    animation: scale711 9s linear infinite;
+}
+
+@keyframes scale711 {
+    0% {
+        transform: scale(1);
+    }
+
+    39% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

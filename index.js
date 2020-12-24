@@ -1,10 +1,10 @@
-var btnBox = document.getElementById("btnBox");
-var btn478 = document.getElementById("btn478");
-var btn711 = document.getElementById("btn711");
+const btnBox = document.getElementById("btnBox");
+const btn478 = document.getElementById("btn478");
+const btn711 = document.getElementById("btn711");
 
-var buttons = [btnBox, btn478, btn711];
+const buttons = [btnBox, btn478, btn711];
 
-function clicked (index) {
+const clicked = index => {
     for (var i=0; i < buttons.length; i++) {
         if (i === index) {
             buttons[i].classList.add('btn-primary');
