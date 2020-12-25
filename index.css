@@ -1,5 +1,6 @@
 body {
-    background-color: #000;
+    /* background-color: #000; */
+    background: #000 url('./images/bg.jpg') no-repeat center center/cover;
 }
 
 .container {
@@ -47,6 +48,26 @@ body {
         #fff 100%
     );
 }
+
+.gradient-478 {
+    background: conic-gradient(
+        #55b7a4 0%,
+        #4ca493 21%,
+        #fff 21%,
+        #fff 58%,
+        #336d62 58%,
+        #2a5b52 100%
+    );
+}
+
+.gradient-711 {
+    background: conic-gradient(
+        #55b7a4 0%,
+        #4ca493 39%,
+        #336d62 39%,
+        #2a5b52 100%
+    );
+}
   
 .pointer {
     background-color: #fff;
@@ -54,6 +75,7 @@ body {
     height: 20px;
     width: 20px;
     display: block;
+    transform: rotate(0deg);
 }
   
 .pointer-container {
@@ -66,15 +88,15 @@ body {
 }
 
 .pointer-box {
-    animation: rotate 16s linear forwards infinite;
+    animation: rotate 10s linear forwards infinite;
 }
 
 .pointer-478 {
-    animation: rotate 9.5s linear forwards infinite;
+    animation: rotate 10s linear forwards infinite;
 }
 
 .pointer-711 {
-    animation: rotate 18s linear forwards infinite;
+    animation: rotate 10s linear forwards infinite;
 }
   
 @keyframes rotate {
@@ -88,7 +110,7 @@ body {
 }
   
 .scaleBox {
-    animation: boxScale 16s linear infinite;
+    animation: scaleBox 10s linear infinite;
 }
   
 @keyframes scaleBox {
@@ -114,7 +136,7 @@ body {
 }
 
 .scale478 {
-    animation: scale478 9.5s linear infinite;
+    animation: scale478 10s linear infinite;
 }
 
 @keyframes scale478 {
@@ -136,7 +158,7 @@ body {
 }
 
 .scale711 {
-    animation: scale711 9s linear infinite;
+    animation: scale711 10s linear infinite;
 }
 
 @keyframes scale711 {
